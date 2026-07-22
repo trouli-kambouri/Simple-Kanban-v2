@@ -93,10 +93,20 @@ h3
 {
     background: #ff99c8;
 }
+
+.todo h3
+{
+    background: #f15bb5;
+}
     
 .current
 {
     background: #fcf6bd;
+}
+
+.current h3
+{
+    background: #f9c74f;
 }
 
 .progress
@@ -104,15 +114,25 @@ h3
     background: #a9def9;
 }
 
+.progress h3
+{
+    background: #48cae4;
+}
+
 .done
 {
     background: #d0f4de;
 }
 
+.done
+{
+    background: #80ed99;
+}
+
 .column h3
 {
     text-align: center;
-    background: rgba(0,0,0,0.15);
+    background: rgba(0,0,0,0.05);
     color: white;
     padding: 12px;
     border-radius: 8px;
