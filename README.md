@@ -18,8 +18,8 @@ The web application is intended to be a functioning Kanban board, with the follo
 - [ ] Choose a List Colour
 <br>(_may implement colour themes instead_)
 - [ ] Check Tasks as "Done"
-<br>(_not sure if this is currently necessary; using automatic strikethrough when in the "DONE" column_)
-- [x] Grey out or strikethrough "Done" Tasks
+<br>(_not sure if this is necessary for as long as there is a static DONE column; currently using automatic strikethrough when in "DONE" column_)
+- [x] Grey out and/or strikethrough "Done" Tasks
 
 Nice to haves:
 - [ ] Create Team Members
