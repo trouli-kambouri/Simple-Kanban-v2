@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +9,51 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1> My Board </h1>
-    <h2> Made by Trouli </h2>
+        <h1> My Board </h1>
+        <h2> Made by Trouli </h2>
 
-<div class = "add-task">
-    <input type="text" id="addtask" placeholder="Add a task">
-    <button onclick="addTask()">Add Task</button>
-</div>
+        <div class = "add-task">
+            <input type="text" id="addtask" placeholder="Add a task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
 
-<div class = "board">
-    <div class = "column todo">
-        <h3> Backlog (To Do) </h3>
-        <div class = "task-list" 
-            id = "todo" 
-            ondrop = "drop(event)" 
-            ondragover = "allowDrop(event)">
+        <div class = "board">
+            <div class = "column todo">
+                <h3> Backlog (To Do) </h3>
+                <div class = "task-list" 
+                    id = "todo" 
+                    ondrop = "drop(event)" 
+                    ondragover = "allowDrop(event)">
+                </div>
+            </div>
+            <div class = "column current">
+                <h3> Current Sprint </h3>
+                <div class = "task-list" 
+                    id = "current" 
+                    ondrop = "drop(event)" 
+                    ondragover = "allowDrop(event)">
+                </div>
+            </div>
+            <div class = "column progress">
+                <h3> In Progress </h3>
+                <div class = "task-list" 
+                    id = "progress" 
+                    ondrop = "drop(event)" 
+                    ondragover = "allowDrop(event)">
+                </div>
+            </div>
+                <div class = "column done">
+                <h3> DONE </h3>
+                <div class = "task-list" 
+                    id = "done" 
+                    ondrop = "drop(event)" 
+                    ondragover = "allowDrop(event)">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class = "column current">
-        <h3> Current Sprint </h3>
-        <div class = "task-list" 
-            id = "current" 
-            ondrop = "drop(event)" 
-            ondragover = "allowDrop(event)">
-        </div>
-    </div>
-    <div class = "column progress">
-        <h3> In Progress </h3>
-        <div class = "task-list" 
-            id = "progress" 
-            ondrop = "drop(event)" 
-            ondragover = "allowDrop(event)">
-        </div>
-    </div>
-        <div class = "column done">
-        <h3> DONE </h3>
-        <div class = "task-list" 
-            id = "done" 
-            ondrop = "drop(event)" 
-            ondragover = "allowDrop(event)">
-        </div>
-    </div>
-</div>
     
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
