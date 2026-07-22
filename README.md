@@ -1,10 +1,8 @@
-# Simple-Kanban-v2
-
-# H2 Kanban Web Application
+# Simple Kanban Web Application
 
 This web application is a small personal project, written in HTML, CSS and JavaScript.
 
-From a personal development standpoint, it is a first introduction to JavaScript and my second attempt at building a web application with working logic.
+From a personal development standpoint, it is a first introduction to JavaScript, and my second attempt at building a web application with working logic.
 
 The web application is intended to be a functioning Kanban board, with the following main features:
 - [ ] Create a List
