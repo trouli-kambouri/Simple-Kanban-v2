@@ -13,5 +13,7 @@ CREATE TABLE users
 CREATE TABLE tasks
 (
     id SERIAL PRIMARY KEY,
-    user
-)
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    task TEXT NOT NULL,
+    task_status TEXT NOT NULL
+);
