@@ -138,7 +138,9 @@ h3
 .column h3
 {
     text-align: center;
+    /*
     background: rgba(0,0,0,0.05);
+    */
     color: white;
     padding: 12px;
     border-radius: 8px;
@@ -188,7 +190,9 @@ h3
 .completed span 
 {
     text-decoration: line-through;
-    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    opacity: 0.55;
+    color: #666
 }
 
 /* Start of Nav Bar */
