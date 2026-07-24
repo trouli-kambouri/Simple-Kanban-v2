@@ -1,7 +1,5 @@
-
 /* 
-This is the setup for the users table and the tasks table in our database 
-Enter psql then copy and paste to create the tables.
+This is the setup for the "users" and "tasks" tables in the database.
 */
 
 CREATE TABLE users 
@@ -10,7 +8,6 @@ CREATE TABLE users
     name TEXT UNIQUE NOT NULL,
     password_hash TEXT NOT NULL
 );
-
 CREATE TABLE tasks
 (
     id SERIAL PRIMARY KEY,

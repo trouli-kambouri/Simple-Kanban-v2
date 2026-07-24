@@ -8,21 +8,17 @@ class UserRepository():
         rows = self._connection.execute('SELECT * FROM users')
         users = []
         for row in rows:
-
-            item = User(row["name"], row["email"], row["phone_number"], row["password"], row["id"])
-
+            item = User(row["name"], row ["password_hash"], row["id"])
             users.append(item)
         return users
     
     def create(self, user):
-        # check whether user name already exists
-
         rows = self._connection.execute("SELECT name FROM users;")
-
         name_list = [row["name"] for row in rows]
-
         if user.name in name_list:
-            raise ValueError("Your name is already logged! Please log in" {user.name} ":). Or, choose a new name for a new account.")
+            raise ValueError(
+                "Your name is already logged! Please log in " + user.name + " :). Or, choose a new name for a new account."
+            )
         
         self._connection.execute
         (
